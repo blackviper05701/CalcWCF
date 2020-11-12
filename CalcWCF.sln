@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcWCF", "CalcWCF\CalcWCF.csproj", "{BD94DC0A-6466-4317-9B1A-7DA53B245DDF}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CalculatorHost(1)", "CalculatorHost\", "{AD2E593C-582D-4658-9857-25A575403072}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		ProjectReferences = "{bd94dc0a-6466-4317-9b1a-7da53b245ddf}|CalcWCF.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_64333"
+		Debug.AspNetCompiler.PhysicalPath = "CalculatorHost\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64333\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_64333"
+		Release.AspNetCompiler.PhysicalPath = "CalculatorHost\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64333\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "64333"
+		SlnRelativePath = "CalculatorHost\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorClient", "CalculatorClient\CalculatorClient.csproj", "{C78CFC6D-E955-4B91-A358-EF1E14920FB6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AD2E593C-582D-4658-9857-25A575403072} = {AD2E593C-582D-4658-9857-25A575403072}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleHost", "ConsoleClient\ConsoleHost.csproj", "{2CB3F500-8465-4FEB-9647-DFFF8E021975}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsServiceHost", "WindowsServiceHost\WindowsServiceHost.csproj", "{4804ECEA-F7DA-4F6D-A697-7CD8D6E9390B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD94DC0A-6466-4317-9B1A-7DA53B245DDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD94DC0A-6466-4317-9B1A-7DA53B245DDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD94DC0A-6466-4317-9B1A-7DA53B245DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD94DC0A-6466-4317-9B1A-7DA53B245DDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD2E593C-582D-4658-9857-25A575403072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD2E593C-582D-4658-9857-25A575403072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD2E593C-582D-4658-9857-25A575403072}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD2E593C-582D-4658-9857-25A575403072}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{C78CFC6D-E955-4B91-A358-EF1E14920FB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C78CFC6D-E955-4B91-A358-EF1E14920FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C78CFC6D-E955-4B91-A358-EF1E14920FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C78CFC6D-E955-4B91-A358-EF1E14920FB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CB3F500-8465-4FEB-9647-DFFF8E021975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CB3F500-8465-4FEB-9647-DFFF8E021975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CB3F500-8465-4FEB-9647-DFFF8E021975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CB3F500-8465-4FEB-9647-DFFF8E021975}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4804ECEA-F7DA-4F6D-A697-7CD8D6E9390B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4804ECEA-F7DA-4F6D-A697-7CD8D6E9390B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4804ECEA-F7DA-4F6D-A697-7CD8D6E9390B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4804ECEA-F7DA-4F6D-A697-7CD8D6E9390B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77321AC4-D36B-42A1-922D-5C70E577B2CB}
+	EndGlobalSection
+EndGlobal
